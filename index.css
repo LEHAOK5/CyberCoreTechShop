@@ -629,13 +629,13 @@ body {
                     position: relative;
                     width: 13.5%;
                     height: 100%;
-                    background-image: url(_image/header_navigation_secondary/icon/cart.svg);
+                    background-image: url(imgs/header-navigation-secondary_cart1.svg);
                     background-position: 100% 50%;
                     background-repeat: no-repeat;
                     background-size: auto 40%;
                 }
                 .header-secondary-main-content-top-right-cart.cartshow {
-                    background-image: url(_image/header_navigation_secondary/icon/cart_2.svg);
+                    background-image: url(imgs/header-navigation-secondary-cart2.svg);
                     background-position: 100% 50%;
                     background-repeat: no-repeat;
                     background-size: auto 40%;
@@ -685,7 +685,7 @@ body {
                     position: relative;
                     width: 13.5%;
                     height: 100%;
-                    background-image: url(_image/header_navigation_secondary/icon/account.svg);
+                    background-image: url(imgs/header-navigation-secondary_account.svg);
                     background-position: 100% 50%;
                     background-repeat: no-repeat;
                     background-size: auto 50%;
@@ -733,7 +733,7 @@ body {
                 .header-secondary-main-content-bottom-search-icon {
                     width: 7%;
                     height: 100%;
-                    background-image: url(_image/header_navigation_secondary/icon/search.svg);
+                    background-image: url(imgs/header-navigation-secondary_search.svg);
                     background-position: 50% 50%;
                     background-repeat: no-repeat;
                     background-size: auto 60%;
@@ -786,14 +786,14 @@ body {
                 height: 80%;
                 border-radius: 100px;
                 background-color: #ffffff;
-                background-image: url(_image/header_navigation_secondary/icon/three_dot.svg);
+                background-image: url(imgs/header-navigation-secondary_three_dot.svg);
                 background-position: 50% 50%;
                 background-repeat: no-repeat;
                 background-size: 35% auto;
                 cursor: pointer;
             }
             .header-secondary-main-content-bottom-button.close {
-                background-image: url(_image/header_navigation_secondary/icon/close.svg);
+                background-image: url(imgs/header-navigation-secondary_close.svg);
                 background-position: 50% 50%;
                 background-repeat: no-repeat;
                 background-size: 25% auto;
@@ -835,7 +835,7 @@ body {
 #sup-decortop-content-1 {
     width: 100%;
     height: 18vw;
-    background-image: url(_image/content_1/sup_decor/background.svg);
+    background-image: url(imgs/sup-decor_background.svg);
     background-position: 28.5% 30%;
     background-repeat: no-repeat;
     background-size: 31.5% auto;
@@ -866,7 +866,7 @@ body {
     position: relative;
     width: 15%;
     height: 100%;
-    background-image: url(_image/content_1/decor/test.svg);
+    background-image: url(imgs/decor_test.svg);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: 100% auto ;
@@ -983,7 +983,7 @@ body {
         position: absolute;
         width: 100%;
         height: 100%;
-        background-image: url(_image/content_1/icon/plus.svg);
+        background-image: url(imgs/icon_plus.svg);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: 30% auto;
@@ -991,7 +991,7 @@ body {
         transition: 0.2s;
     }
     .content-1-line-row-shopping:hover::after {
-        background-image: url(_image/content_1/icon/plus.svg);
+        background-image: url(imgs/icon_plus.svg);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: 25% auto;
@@ -1037,7 +1037,7 @@ body {
             position: absolute;
             width: 100%;
             height: 100%;
-            background-image: url(_image/content_1/icon/arrow_up_right_2.svg);
+            background-image: url(imgs/arrow_up_right2.svg);
             background-position: 50% 50%;
             background-repeat: no-repeat;
             background-size: 30% auto;
@@ -1069,7 +1069,7 @@ body {
                 width: 9%;
                 height: 100%;
                 margin-left: 2.5%;
-                background-image: url(_image/content_1/icon/arrow_right_darkblue.svg);
+                background-image: url(imgs/header_arrow_right_darkblue.svg);
                 background-position: 50% 50%;
                 background-repeat: no-repeat;
                 background-size: 100% auto;
@@ -1292,7 +1292,7 @@ body {
         width: 15.4%;
         height: 100%;
         border-radius: 1vw;
-        background-image: url(_image/content_2/decor/new_logo.svg);
+        background-image: url(imgs/content2_new-logo.svg);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: auto 60%;
@@ -1301,7 +1301,7 @@ body {
         width: 15.4%;
         height: 100%;
         border-radius: 1vw;
-        background-image: url(_image/content_2/decor/best_selling_logo.svg);
+        background-image: url(imgs/content2_best-selling-logo.svg);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: auto 80%;
@@ -1322,7 +1322,7 @@ body {
     padding-left: 25%;
     padding-right: 25%;
     box-sizing: border-box;
-    background-image: url(_image/content_3/decor/background.svg);
+    background-image: url(imgs/content3_background.svg);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: 95% auto;
@@ -1362,7 +1362,7 @@ body {
         top: -7%;
         width: 100%;
         height: 14%;
-        background-image: url(_image/content_3/decor/triangle.svg);
+        background-image: url(imgs/content3_triangle.svg);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: auto 100%;
@@ -1400,7 +1400,7 @@ body {
             position: absolute;
             width: 100%;
             height: 100%;
-            background-image: url(_image/content_3/decor/item_1.svg);
+            background-image: url(imgs/content3_item1.svg);
             background-position: 50% 50%;
             background-repeat: no-repeat;
             background-size: auto 38%;
@@ -1469,7 +1469,7 @@ body {
             margin-right: 15%;
             margin-left: 3%;
             width: 10%;
-            background-image: url(_image/content_3/icon/arrow_right.svg);
+            background-image: url(imgs/content3_arrow_right.svg);
             background-position: 50% 50%;
             background-repeat: no-repeat;
             background-size: 100% auto;
@@ -1496,7 +1496,7 @@ body {
         top: -7%;
         width: 100%;
         height: 14%;
-        background-image: url(_image/content_3/decor/triangle.svg);
+        background-image: url(imgs/content3_triangle.svg);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: auto 100%;
@@ -1534,7 +1534,7 @@ body {
             position: absolute;
             width: 100%;
             height: 100%;
-            background-image: url(_image/content_3/decor/item_2.svg);
+            background-image: url(imgs/content3_item2.svg);
             background-position: 45% 50%;
             background-repeat: no-repeat;
             background-size: auto 34%;
@@ -1602,7 +1602,7 @@ body {
             margin-right: 15%;
             margin-left: 3%;
             width: 10%;
-            background-image: url(_image/content_3/icon/arrow_right.svg);
+            background-image: url(imgs/content3_arrow_right.svg);
             background-position: 50% 50%;
             background-repeat: no-repeat;
             background-size: 100% auto;
@@ -1629,7 +1629,7 @@ body {
         top: -7%;
         width: 100%;
         height: 14%;
-        background-image: url(_image/content_3/decor/triangle.svg);
+        background-image: url(imgs/content3_triangle.svg);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: auto 100%;
@@ -1667,7 +1667,7 @@ body {
             position: absolute;
             width: 100%;
             height: 100%;
-            background-image: url(_image/content_3/decor/item_3.svg);
+            background-image: url(imgs/content3_item3.svg);
             background-position: 50% 50%;
             background-repeat: no-repeat;
             background-size: auto 38%;
@@ -1735,7 +1735,7 @@ body {
             margin-right: 15%;
             margin-left: 3%;
             width: 10%;
-            background-image: url(_image/content_3/icon/arrow_right.svg);
+            background-image: url(imgs/content3_arrow_right.svg);
             background-position: 50% 50%;
             background-repeat: no-repeat;
             background-size: 100% auto;
@@ -1773,7 +1773,7 @@ body {
         top: -7%;
         width: 100%;
         height: 14%;
-        background-image: url(_image/content_3/decor/triangle.svg);
+        background-image: url(imgs/content3_triangle.svg);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: auto 100%;
@@ -1811,7 +1811,7 @@ body {
             position: absolute;
             width: 100%;
             height: 100%;
-            background-image: url(_image/content_3/decor/item_4.svg);
+            background-image: url(imgs/content3_item4.svg);
             background-position: 50% 50%;
             background-repeat: no-repeat;
             background-size: 80% auto;
@@ -1880,7 +1880,7 @@ body {
             margin-right: 15%;
             margin-left: 3%;
             width: 10%;
-            background-image: url(_image/content_3/icon/arrow_right.svg);
+            background-image: url(imgs/content3_arrow_right.svg);
             background-position: 50% 50%;
             background-repeat: no-repeat;
             background-size: 100% auto;
@@ -1907,7 +1907,7 @@ body {
     margin-bottom: 1vw;
     width: 100%;
     height: 1.1vw;
-    background-image: url(_image/content_4/decor/line_1.svg);
+    background-image: url(imgs/content4_line1.svg);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -1981,7 +1981,7 @@ body {
                 content: "";
                 width: 100%;
                 height: 100%;
-                background-image: url(_image/content_4/icon/arrow_right_darkblue.svg);
+                background-image: url(imgs/contetn4_arrow-right-darkblue.svg);
                 background-position: 50% 50%;
                 background-repeat: no-repeat;
                 background-size: auto 40%;
@@ -2046,7 +2046,7 @@ body {
                 content: "";
                 width: 100%;
                 height: 100%;
-                background-image: url(_image/content_4/icon/arrow_right.svg);
+                background-image: url(imgs/content4_arrow-right.svg);
                 background-position: 50% 50%;
                 background-repeat: no-repeat;
                 background-size: auto 40%;
@@ -2071,7 +2071,7 @@ body {
         .content-4-main-smallrow-logo1 {
             width: 30%;
             height: 40%;
-            background-image: url(_image/CyberCore/logo_gradient_2.svg);
+            background-image: url(imgs/content4_logo-gradient2.svg);
             background-position: 100% 50%;
             background-repeat: no-repeat;
             background-size: auto 100%;
@@ -2088,7 +2088,7 @@ body {
         .content-4-main-smallrow-logo2 {
             width: 30%;
             height: 40%;
-            background-image: url(_image/CyberCore/logo_itc_gradient.svg);
+            background-image: url(imgs/content4_logo-itc-gradient1.svg);
             background-position: 0% 50%;
             background-repeat: no-repeat;
             background-size: auto 100%;
@@ -2097,7 +2097,7 @@ body {
     margin-top: 1vw;
     width: 100%;
     height: 1.1vw;
-    background-image: url(_image/content_4/decor/line_2.svg);
+    background-image: url(imgs/content4_line_2.svg);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -2155,7 +2155,7 @@ body {
                 margin-top: 10%;
                 width: 100%;
                 height: 11%;
-                background-image: url(_image/CyberCore/logo_white.svg);
+                background-image: url(imgs/footer_logo-white.svg);
                 background-position: 0% 50%;
                 background-repeat: no-repeat;
                 background-size: auto 100%;
@@ -2164,7 +2164,7 @@ body {
                 margin-top: 7%;
                 width: 100%;
                 height: 9%;
-                background-image: url(_image/CyberCore/logo_itc_white.svg);
+                background-image: url(imgs/footer_logo-itc-white.svg);
                 background-position: 0% 50%;
                 background-repeat: no-repeat;
                 background-size: auto 100%;
@@ -2236,7 +2236,7 @@ body {
                     .footer-content-left-main-text-phone-icon {
                         width: 4%;
                         margin-right: 2%;
-                        background-image: url(_image/footer/icon/phone.svg);
+                        background-image: url(imgs/footer_icon-phone.svg);
                         background-position: 50% 50%;
                         background-repeat: no-repeat;
                         background-size: 100% auto;
@@ -2259,7 +2259,7 @@ body {
                     .footer-content-left-main-text-email-icon {
                         width: 4%;
                         margin-right: 2%;
-                        background-image: url(_image/footer/icon/email.svg);
+                        background-image: url(imgs/footer_icon-email.svg);
                         background-position: 50% 50%;
                         background-repeat: no-repeat;
                         background-size: 100% auto;
@@ -2287,7 +2287,7 @@ body {
                         .footer-content-left-main-text-location-line1-icon {
                             width: 3%;
                             margin-right: 3%;
-                            background-image: url(_image/footer/icon/location.svg);
+                            background-image: url(imgs/footer_icon-location.svg);
                             background-position: 50% 50%;
                             background-repeat: no-repeat;
                             background-size: 100% auto;
@@ -2387,7 +2387,7 @@ body {
                 width: 100%;
                 height: 56%;
                 border-radius: 0.7vw;
-                background-image: url(_image/footer/logo_media_pay/check.png);
+                background-image: url(imgs/footer_logo-media-pay_check.png);
                 background-position: 50% 50%;
                 background-repeat: no-repeat;
                 background-size: 80% auto;
@@ -2418,7 +2418,7 @@ body {
                         width: 30%;
                         height: 100%;
                         border-radius: 0.7vw;
-                        background-image: url(_image/footer/logo_media_pay/momo.png);
+                        background-image: url(imgs/footer_logo-media-pay_momo.png);
                         background-position: 50% 50%;
                         background-repeat: no-repeat;
                         background-size: 105% auto;
@@ -2429,7 +2429,7 @@ body {
                         height: 100%;
                         border-radius: 0.7vw;
                         background-color: #ffffff;
-                        background-image: url(_image/footer/logo_media_pay/vnpay.png);
+                        background-image: url(imgs/footer_logo-media-pay_vnpay.png);
                         background-position: 50% 50%;
                         background-repeat: no-repeat;
                         background-size: 105% auto;
@@ -2440,7 +2440,7 @@ body {
                         height: 100%;
                         border-radius: 0.7vw;
                         background-color: #ffffff;
-                        background-image: url(_image/footer/logo_media_pay/paypal.png);
+                        background-image: url(imgs/footer_logo-media-pay_paypal.png);
                         background-position: 50% 50%;
                         background-repeat: no-repeat;
                         background-size: 105% auto;
@@ -2482,7 +2482,7 @@ body {
                 margin-left: 4%;
                 width: 10%;
                 height: 40%;
-                background-image: url(_image/footer/icon/arrow_up.svg);
+                background-image: url(imgs/footer_icon-arrow_up.svg);
                 background-position: 50% 50%;
                 background-repeat: no-repeat;
                 background-size: auto 100%;
