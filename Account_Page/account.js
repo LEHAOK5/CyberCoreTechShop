@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	setTimeout(() => {
 		if (email.trim() !== '' && password.trim() !== '') {
 			feedback.textContent = 'Đăng nhập thành công. Đang chuyển hướng...'
-			 setTimeout(() => window.location.href = '/index.html', 1000)
+			 setTimeout(() => window.location.href = 'index.html', 1000)
 		} else {
 			feedback.textContent = ''
 			errPw.textContent = 'Vui lòng nhập đầy đủ thông tin'
