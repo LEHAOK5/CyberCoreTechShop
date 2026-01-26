@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Đăng nhập - CyberCore</title>
+        <link rel="icon" type="image/x-icon" href="imgs/header_Logo-CyberCoreTechShop.png">
+
+        <link rel="stylesheet" href="account.css">
+    </head>
+
+    <body>
+        <div id="cybercore">
+            <div id="content">
+                <main class="page">
+                    <section class="hero">
+                        <div class="card" id="auth-card" aria-live="polite">
+                            <div class="hero-logo" aria-hidden="false">
+                                <img src="imgs/header_Logo-CyberCoreTechShop.png" alt="Sybercore logo" class="hero-logo-img">
+                                <div class="hero-logo-title">CyberCoreTechShop</div>
+                            </div>
+                            <!-- Sign In view -->
+                            <form id="form-signin" class="form active" novalidate>
+                                <!--<label class="field-label">Email của bạn-->
+                                    <div class="input-group">
+                                        <span class="icon" aria-hidden="true">
+                                            <!-- person-fill.svg -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                            </svg>
+                                        </span>
+                                        <input id="signin-email" name="email" type="email" placeholder="Tên người dùng" required autocomplete="username">
+                                    </div>
+                                    <div class="error" id="err-signin-email" aria-live="assertive"></div>
+                                </label>
+
+                                <!--<label class="field-label">Mật khẩu của bạn-->
+                                    <div class="input-group">
+                                        <span class="icon" aria-hidden="true">
+                                            <!-- lock-fill.svg -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M8 0a4 4 0 0 1 4 4v2.05a2.5 2.5 0 0 1 2 2.45v5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5v-5a2.5 2.5 0 0 1 2-2.45V4a4 4 0 0 1 4-4m0 1a3 3 0 0 0-3 3v2h6V4a3 3 0 0 0-3-3"/>
+                                            </svg>
+                                        </span>
+                                        <input id="signin-password" name="password" type="password" placeholder="Mật khẩu" required autocomplete="current-password">
+                                        <button type="button" class="btn-toggle-pw" data-target="signin-password" aria-label="Show password" data-visible="false">
+                                            <!-- eye-slash-fill.svg -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                                <path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7 7 0 0 0 2.79-.588M5.21 3.088A7 7 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474z"/>
+                                                <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12z"/>
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="btn-toggle-pw" data-target="signin-password" aria-label="Hide password" data-visible="true" style="display:none;">
+                                            <!-- eye-fill.svg -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="error" id="err-signin-password" aria-live="assertive"></div>
+                                </label>
+
+                                <div class="form-actions">
+                                    <button id="btn-signin" class="btn primary" type="submit">Đăng nhập</button>
+                                </div>
+
+                                <div class="form-links">
+                                    <a href="#" id="link-register">Bạn chưa có tài khoản?</a>
+                                    <a href="#" id="link-recover">Quên mật khẩu?</a>
+                                </div>
+                            </form>
+
+                            <!-- Register view -->
+                            <form id="form-register" class="form" novalidate>
+                                <!--<label class="field-label">Nhập email của bạn-->
+                                    <div class="input-group">
+                                        <span class="icon" aria-hidden="true">
+                                            <!-- person-fill.svg -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                            </svg>
+                                        </span>
+                                        <input id="reg-email" name="email" type="email" placeholder="Tên người dùng" required autocomplete="email">
+                                    </div>
+                                    <div class="error" id="err-reg-email" aria-live="assertive"></div>
+                                </label>
+
+                                <!--<label class="field-label">Nhập mật khẩu của bạn-->
+                                    <div class="input-group">
+                                        <span class="icon" aria-hidden="true">
+                                            <!-- lock-fill.svg -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M8 0a4 4 0 0 1 4 4v2.05a2.5 2.5 0 0 1 2 2.45v5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5v-5a2.5 2.5 0 0 1 2-2.45V4a4 4 0 0 1 4-4m0 1a3 3 0 0 0-3 3v2h6V4a3 3 0 0 0-3-3"/>
+                                            </svg>
+                                        </span>
+                                        <input id="reg-password" name="password" type="password" placeholder="Mật khẩu" required autocomplete="new-password">
+                                        <button type="button" class="btn-toggle-pw" data-target="reg-password" aria-label="Show password" data-visible="false">
+                                            <!-- eye-slash-fill.svg -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                                <path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7 7 0 0 0 2.79-.588M5.21 3.088A7 7 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474z"/>
+                                                <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12z"/>
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="btn-toggle-pw" data-target="reg-password" aria-label="Hide password" data-visible="true" style="display:none;">
+                                            <!-- eye-fill.svg -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="error" id="err-reg-password" aria-live="assertive"></div>
+                                </label>
+
+                                <!--<label class="field-label">Xác nhận mật khẩu của bạn-->
+                                    <div class="input-group">
+                                        <span class="icon" aria-hidden="true">
+                                            <!-- arrow-repeat.svg -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                                <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9"/>
+                                                <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z"/>
+                                            </svg>
+                                        </span>
+                                        <input id="reg-password-confirm" name="password_confirm" type="password" placeholder="Nhập lại mật khẩu" required autocomplete="new-password">
+                                        <button type="button" class="btn-toggle-pw" data-target="reg-password-confirm" aria-label="Show password" data-visible="false">
+                                            <!-- eye-slash-fill.svg -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                                <path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7 7 0 0 0 2.79-.588M5.21 3.088A7 7 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474z"/>
+                                                <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12z"/>
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="btn-toggle-pw" data-target="reg-password-confirm" aria-label="Hide password" data-visible="true" style="display:none;">
+                                            <!-- eye-fill.svg -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="error" id="err-reg-password-confirm" aria-live="assertive"></div>
+                                </label>
+
+                                <div class="form-actions">
+                                    <button id="btn-register" class="btn primary" type="submit">Tạo tài khoản MIỄN PHÍ</button>
+                                </div>
+
+                                <div class="form-links">
+                                    <a href="#" id="link-back-to-signin">Bạn đã có tài khoản?</a>
+                                </div>
+                            </form>
+
+                            <!-- Recover view -->
+                            <form id="form-recover" class="form" novalidate>
+                                <!--<label class="field-label">Nhập email của bạn-->
+                                    <div class="input-group">
+                                        <span class="icon" aria-hidden="true">
+                                            <!-- envelope-fill.svg -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                                            </svg>
+                                        </span>
+                                        <input id="rec-email" name="email" type="email" placeholder="Tên người dùng" required autocomplete="email">
+                                    </div>
+                                    <div class="error" id="err-rec-email" aria-live="assertive"></div>
+                                </label>
+
+                                <div class="form-actions">
+                                    <button id="btn-recover" class="btn primary" type="submit">Khôi phục mật khẩu của tôi</button>
+                                </div>
+
+                                <div class="form-links">
+                                    <a href="#" id="link-recover-back">Quay lại đăng nhập</a>
+                                </div>
+                            </form>
+
+                            <div id="form-feedback" class="form-feedback" aria-live="polite"></div>
+                        </div>
+                    </section>
+
+                    <footer class="site-footer">
+                        <small>Điều khoản sử dụng <span class="dot">.</span> Chính sách Bảo mật</small>
+                    </footer>
+                </main>
+            </div>
+        </div>
+
+        <!--Trong đây chỉ chứa link đến JS-->
+        <script src="account.js"></script>
+        <!---------------------------------->
+    </body>
+</html>

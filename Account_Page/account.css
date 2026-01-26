@@ -1,0 +1,325 @@
+/* ==========================================================================
+   1. BIẾN MÀU SẮC & CẤU HÌNH CƠ BẢN (Từ content.css)
+   ========================================================================== */
+:root {
+    --bg: #fff8ef;
+    --card: #ffffff;
+    --muted: #1d2449;
+    --text: #1d2449;
+    --accent-blue: #3fa4dc;
+    --accent-blue-2: #1c489f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* ==========================================================================
+   2. THANH CUỘN & BODY GLOBAL (Từ CyberCore.css + content.css)
+   ========================================================================== */
+
+/* Tùy chỉnh thanh cuộn (Scrollbar) */
+::-webkit-scrollbar {
+    width: 7px;
+    /* Nếu bạn muốn ẩn thanh cuộn như trong content.css thì dùng: display: none; */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #1d2449;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+}
+
+/* Cấu hình Body (Kết hợp: lấy font và nền gradient của content.css) */
+body {
+    margin: 0;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    background: linear-gradient(to bottom right, #3fa4dc 0%, #1c489f 100%); /* Nền xanh gradient */
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+}
+
+#cybercore {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* ==========================================================================
+   3. GIAO DIỆN TRANG TÀI KHOẢN / FORM (Từ content.css)
+   ========================================================================== */
+
+.page {
+    max-width: 980px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.logo {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    position: relative;
+    padding: 0;
+}
+
+/* Khu vực Logo */
+.hero-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px 50px;
+
+}
+
+.hero-logo-img {
+    border-radius: 50%;
+    width: 250px;
+    max-width: 50%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(70, 137, 200, 0.5);
+}
+.hero-logo-title {
+    margin-top: 15px;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: #1c489f;
+    text-align: center;
+
+}
+
+/* Thẻ chứa Form (Card) */
+.card {
+    width: 380px;
+    background: var(--card);
+    border-radius: 30px;
+    padding: 50px 24px;
+    position: relative;
+    z-index: 5;
+    margin-bottom: 32px;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 30px;
+    box-shadow: 0 0 1.5vw rgba(255, 255, 255, 0.4);
+    pointer-events: none;
+    z-index: -1;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover::before {
+    box-shadow: 0 0 2vw rgba(255, 255, 255, 0.6);
+}
+
+.card-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+/* Hiệu ứng chuyển đổi giữa các Form (Đăng nhập/Đăng ký) */
+.form {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.form.active {
+    display: block;
+    opacity: 1;
+}
+
+#form-signin button {
+    margin-top: 2px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.field-label,
+.input-group {
+    margin-top: 6px;
+    display: block;
+    font-size: 14px;
+    color: #1d2449;
+    margin-bottom: 6px;
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 23px;
+    align-items: center;
+    border: 1px solid #3fa4dc;
+    background: transparent;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.input-group input {
+    border: 0;
+    outline: none;
+    padding: 18px 12px;
+    font-size: 15px;
+    flex: 1;
+}
+
+.input-group .icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 12px;
+    color: var(--muted);
+    background: rgb(255, 255, 255);
+}
+
+.btn-toggle-pw {
+    border: 0;
+    background: transparent;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.btn-toggle-pw:focus {
+    outline: 2px solid rgba(0, 0, 0, 0.06);
+}
+
+.btn {
+    padding: 12px 32px;
+    border-radius: 28px;
+    border: 0;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+/* Nút chính (Primary) */
+.btn.primary {
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-blue-2));
+    color: white;
+    border-radius: 28px;
+    font-weight: 700;
+    padding: 18px 32px;
+    filter: drop-shadow(0vw 0vw 0.8vw #ffffff);
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.btn.primary:hover {
+    box-shadow: 0 0 1vw 0.2vw color-mix(in srgb, var(--accent-blue) 60%, transparent);
+    transform: scale(1.05);
+}
+
+.form-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    font-size: 13px;
+}
+
+.form-links a {
+    color: #1d2449;
+    text-decoration: none;
+}
+
+.error {
+    color: #c0392b;
+    font-size: 13px;
+    min-height: 18px;
+    margin-top: -10px;
+    margin-bottom: 12px;
+}
+
+.form-feedback {
+    margin-top: 10px;
+    color: #1b5e20;
+    font-weight: 600;
+    text-align: center;
+}
+
+.site-footer {
+    margin-top: 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.site-footer .dot {
+    font-weight: 900;
+    color: #ffffff;
+    padding: 0 4px;
+}
+
+/* Responsive */
+@media (max-width: 520px) {
+    /* Căn chỉnh lại lề của trang */
+    .page {
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    /* Card (Khung đăng nhập) chiếm toàn màn hình */
+    .card {
+        width: 100%;
+        padding: 40px 20px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Logo nhỏ lại trên điện thoại */
+    .hero-logo {
+        margin-bottom: 30px;
+    }
+    
+    .hero-logo-img {
+        width: 160px; /* Thu nhỏ kích thước logo */
+        height: 160px;
+    }
+
+    /* Input và nút bấm to rõ hơn để dễ chạm */
+    .input-group {
+        margin-bottom: 15px;
+    }
+
+    .btn.primary {
+        font-size: 16px; /* Chữ to hơn */
+    }
+
+    /* Links: Nếu màn hình quá nhỏ thì rớt dòng */
+    .form-links {
+        flex-direction: column; /* Xếp dọc */
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+    }
+
+    /* Footer nhỏ lại */
+    .site-footer {
+        font-size: 12px;
+    }
+}
